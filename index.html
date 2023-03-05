@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/icono.min.css">
+  <script type="module" src="./js/index.js"></script>
+  <title>Momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls-wrapper">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="volume-container">
+          <div class="volume-button">
+            <div class="volume icono-volumeMedium"></div>
+          </div>
+          <div class="volume-slider">
+            <div class="volume-percentage"></div>
+          </div>
+        </div>
+      </div>
+      <div class="full-progress">
+        <div class="timeline">
+          <div class="progress"></div>
+        </div>
+        <div class="player-time"></div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="settings"><img src="./assets/svg/services.svg" alt="" class="settings-img"></button>
+    <div class="links">
+      <div class="links-bg invisible">
+        <div class="links-list-wrapper">
+          <ol class="links-list">
+            <li class="links-item" style="display: none;">
+              <div class="link-wrapper">
+                <img src="" alt="" class="link-img">
+                <a href="" class="links-link"></a>
+              </div>
+              <span class="delete-link"><div class="icono-trash"></div></span>
+            </li>
+            <li class="links-item">
+              <div class="link-wrapper">
+                <img src="https://icons.duckduckgo.com/ip2/www.rs.school.ico" alt="" class="link-img rsschool">
+                <a href="https://rs.school" class="links-link">RS School</a>
+              </div>
+              <span></span>
+            </li>
+            <li class="links-item">
+              <div class="link-wrapper">
+                <img src="https://icons.duckduckgo.com/ip2/www.github.com.ico" alt="" class="link-img rsschool">
+                <a href="https://github.com/Shizopat" class="links-link github-link">My github</a>
+              </div>
+              <span></span>
+            </li>
+          </ol>
+          <div class="create-new-link">
+            <span class="icono-plus"></span>
+            <span class="new-link-text">Create new link</span>
+          </div>
+        </div>
+        <div class="add-new-link" style="display: none;">
+          <div class="new-links-inputs">
+            <p class="new-link-link">Link: </p>
+            <input type="text" class="link-link-input" placeholder="example.com">
+            <br>
+            <p class="new-link-description">Description: </p>
+            <input type="text" class="link-description-input" placeholder="Anything">
+          </div>
+          <div class="confirm-link-buttons">
+            <button class="new-link-confirm confirm">Confirm</button>
+            <button class="new-link-confirm cancel">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <span class="links-text">Links</span>
+    </div>
+    <div class="quote-container">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+  </footer>
+  <div class="popup">
+    <div class="popup-content">
+      <div class="popup-header">
+        <span class="popup-header-text"></span>
+        <div class="close-settings"><div class="icono-cross"></div></div>
+      </div>
+      <div class="popup-body">
+        <span class="settings-text settings-language"></span>
+        <img src="./assets/svg/ru.svg" alt="" class="flag ru">
+        <img src="./assets/svg/gb.svg" alt="" class="flag eng">
+        <br>
+        <span class="settings-text settings-bg-src"></span>
+        <br>
+        <div class="bg-src github">Github</div> <span class="stick">|</span>
+        <div class="bg-src unsplash">Unsplash API</div> <span class="stick">|</span>
+        <div class="bg-src flickr">Flickr API</div>
+        <br>
+        <span class="settings-text settings-bg-tags"></span>
+        <br>
+        <input type="text" name="" id="" class="tags-api">
+        <span class="tags-error"></span>
+        <br>
+        <span class="settings-text settings-disable-blocks"></span>
+        <br>
+        <div class="disabled-block settings-time">Time</div> <span class="stick">|</span>
+        <div class="disabled-block settings-date">Date</div> <span class="stick">|</span>
+        <div class="disabled-block settings-greeting">Greeting</div> <span class="stick">|</span>
+        <div class="disabled-block settings-quote">Quote</div> <span class="stick">|</span>
+        <div class="disabled-block settings-weather">Weather</div> <span class="stick">|</span>
+        <div class="disabled-block settings-player">Audio player</div> <span class="stick">|</span>
+        <div class="disabled-block settings-links">SomeThing</div>
+        <br>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
