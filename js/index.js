@@ -103,7 +103,7 @@ addEventListener("DOMContentLoaded", () => {
     }
     let newLinksItem = linksItemClone.cloneNode(true);
     newLinksItem.style.display = 'flex';
-    newLinksItem.querySelector('.link-img').src = `https://icons.duckduckgo.com/ip2/${linkToAdd.replace('https://', '')}.ico`;
+    newLinksItem.querySelector('.link-img').src = `https://icons.duckduckgo.com/ip2/${linkToAdd.replace('https://', '').replace(/\/.+/, '').trim()}.ico`;
     newLinksItem.querySelector('.links-link').href = linkToAdd;
     newLinksItem.querySelector('.links-link').textContent = descriptionInput.value || "New link";
     document.querySelector('.links-list').appendChild(newLinksItem);
@@ -114,7 +114,7 @@ addEventListener("DOMContentLoaded", () => {
     linksArr.forEach(x => {
       let newLinksItem = linksItemClone.cloneNode(true);
       newLinksItem.style.display = 'flex';
-      newLinksItem.querySelector('.link-img').src = `https://icons.duckduckgo.com/ip2/${x.link.replace('https://', '')}.ico`;
+      newLinksItem.querySelector('.link-img').src = `https://icons.duckduckgo.com/ip2/${x.link.replace('https://', '').replace(/\/.+/, '').trim()}.ico`;
       newLinksItem.querySelector('.links-link').href = x.link;
       newLinksItem.querySelector('.links-link').textContent = x.description;
       document.querySelector('.links-list').appendChild(newLinksItem);
